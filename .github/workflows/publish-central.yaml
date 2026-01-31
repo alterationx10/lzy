@@ -22,7 +22,7 @@ jobs:
           java-version: '25'
 
       - name: Run tests
-        run: sbt test
+        run: ./mill test
 
       - name: Publish
         run: ./mill mill.javalib.SonatypeCentralPublishModule/
